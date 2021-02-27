@@ -2,17 +2,22 @@
 
 {{ define "home" }}
         <!--  / bannerBox \ -->
-        <div class="home-banner img-bg" style="background-image: url(images/bg.jpg);">
-            <div class="container">
-                <!--  / bannerBox \ -->
-                <article class="bannerBox">
+        <div class="home-banner img-bg">
+            <div class="slick-single-slide" id="singleSlide">
+                <div class="img-bg" style="background-image: url(images/bg.jpg);"></div>
+                <div class="img-bg" style="background-image: url(images/bg.jpg);"></div>
+                <div class="img-bg" style="background-image: url(images/bg.jpg);"></div>
+            </div>
+            <!--  / bannerBox \ -->
+            <article class="bannerBox">
+                <div class="container">
                     <div>
                         <h1 class="bannerBox__title">Get better grades.</h1>
                         <h2>Instant online tutoring</h2>
                     </div>
-                </article>
-                <!--  \ bannerBox / -->
-            </div>
+                </div>
+            </article>
+            <!--  \ bannerBox / -->
         </div>
         <div class="bannerBox__logos">
             <div class="container">
@@ -159,7 +164,7 @@
             <div class="container">
                 <h1 class="contentBox__title">What students say about our tutors</h1>
 
-                <div class="slick-slider">
+                <div class="slick-slider" id="threeSlide">
                     <div class="contentBox__testimonial">
                         <img class="contentBox__testimonial-quote" src="images/quote.png" alt="">
                         <p class="contentBox__testimonial-desc">Sam was awesome! He really walked me through all the concepts I was struggling with. His patience was encouraging and kept me going.</p>
@@ -185,7 +190,6 @@
                         <h3 class="contentBox__testimonial-title">Cynthia S.</h3>
                     </div>
                 </div>
-
             </div>
         </article>
         <!--  \ contentBox / -->

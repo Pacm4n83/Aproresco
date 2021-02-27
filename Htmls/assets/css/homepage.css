@@ -1,6 +1,10 @@
-.bannerBox { padding: 14rem 0 7rem; display: flex; justify-content: center; text-align: center; align-items: center; min-height: 79vh; }
+.home-banner { position: relative; }
+.bannerBox { position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex; justify-content: center; text-align: center; align-items: center; }
 .bannerBox h1 { margin-bottom: 0.5rem; color: #fff; font-size: 5.625rem; font-weight: 600; }
 .bannerBox h2 { color: #fff; font-size: 3.4375rem; font-weight: 400; }
+
+.slick-single-slide {  }
+.slick-single-slide .img-bg { background-size: cover; min-height: calc(100vh - 5rem); }
 
 .bannerBox__logos { background: #f9f7f5; }
 .bannerBox__logos-title { white-space: nowrap; color: #696f76; font-size: 1.5rem; }
@@ -73,9 +77,11 @@
 
 @media only screen and (max-width: 991px) {
     .contentBox__feature-center { padding: 0 2rem; }
+    .slick-single-slide .img-bg { min-height: 60vh; }
 }
 
 @media only screen and (max-width: 767px) {
+    .slick-single-slide .img-bg { min-height: 50vh; }
     .contentBox__list > li { display: block; }
     .contentBox__list > li:nth-child(2n) { margin: 0; }
     .contentBox__list-pic { padding: 0rem 0rem 0 7rem; width: 100%; }
