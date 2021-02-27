@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> 
+<!--<![endif]-->
+<head>
+    
+    <title>Aproresco</title>
+
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="keywords" content="key, words">	
+	<meta name="description" content="Website description">
+	<meta name="robots" content="noindex, nofollow"><!-- change into index, follow -->
+    
+    <!-- Mobile Specific Metas ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>           
+
+    <!-- CSS ================================================== -->    
+	<link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/homepage.css">
+
+    
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+
+    <!--  / wrapper \ -->
+    <section class="wrapper">
+        {{ partial "header" . }}
+        {{block "home" . }}{{end}}
+        {{ partial "footer" . }}
+    </section>
+    <!--  \ wrapper / -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
